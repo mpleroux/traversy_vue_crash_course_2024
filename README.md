@@ -2,9 +2,9 @@
 
 ## Description
 
-These are the local files I created while following the Traversy Media tutorial [Vue.js Crash Course](https://www.youtube.com/watch?v=VeNfHj6MhgA)
+These are the local files I created while following the Traversy Media tutorial [Vue.js Crash Course](https://www.youtube.com/watch?v=VeNfHj6MhgA).
 
-- [GitHub repository](https://github.com/bradtraversy/vue-crash-2024)
+- [Project repository](https://github.com/bradtraversy/vue-crash-2024)
 
 I didn't clone or fork the project repo because I wanted to create everything from scratch. I enjoyed this tutorial and the job board project. It was a good review of Vue.js and Tailwind CSS while providing an opportunity to work with an API locally.
 
@@ -116,7 +116,7 @@ As of Vue 3 there's no need to import `defineProps` from `vue` anymore so I remo
 
 I encountered the Vue Router warning "[Vue Router warn]: No match found for location with path "/index.html".
 
-- The URL I was using the test the project had changed from [](http://localhost:3000) to [](http://localhost:3000/index.html). Changing it back fixed the problem.
+- The URL I was using the test the project had changed from `localhost:3000` to `localhost:3000/index.html`. Changing it back fixed the problem.
 - That probably happened when I clicked on some nav links before they had been fully implemented
 
 ## Screenshot
