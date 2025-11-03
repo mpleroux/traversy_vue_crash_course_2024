@@ -60,13 +60,14 @@ npm run dev
 
 Skip Brad's instructions for installing Tailwind/PostCSS and generating the Tailwind/PostCSS config files
 
-Install [Tailwind v4](https://tailwindcss.com/docs/installation/using-vite):
+[Get started with Tailwind CSS v4](https://tailwindcss.com/docs/installation/using-vite):
 
 `npm install tailwindcss @tailwindcss/vite`
 
 Add `@tailwindcss/vite` plugin to Vite config:
 
 ```js
+// link the CSS here instead of in the HTML
 import tailwindcss from '@tailwindcss/vite'
 ...
 export default defineConfig({
@@ -76,15 +77,18 @@ export default defineConfig({
 });
 ```
 
-There is no `tailwind.config.js` file anymore so there's no need to specify directories for watching Tailwind files. The `content` property has been replaced by an automatic system that scans project files for Tailwind classes.
+There is no `tailwind.config.js` file anymore and there's no need to specify directories for watching Tailwind files. The `content` property has been replaced by an automatic system that scans project files for Tailwind classes.
 
-According to the [Tailwind installation guide](https://tailwindcss.com/docs/installation/using-vite) it's no longer necessary to link the CSS from the HTML. It's already imported in `main.js`
+Add `@import "tailwindcss"` to the top of my CSS file
 
-There is a new way to configure Brad's `extend` settings from the old `tailwind.config.js` file but I could never get his 70%/28% grid column style working, even after a lot of suggestions from ChatGPT. To continue the tutorial I did the following:
+VSCode:
 
-- In the CSS file, I removed the `--grid-cols-70/30` rule
-- I replaced the Tailwind class `md:grid-cols-70/30` with the standard `md:grid-cols-[70%_30%]`
-- I split `main.css` into two stylesheets and imported them both in `@/main.js`:
+- Install the [Tailwind CSS Intellisense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) extension by Tailwind Labs
+- When viewing a CSS file that uses Tailwind at-rules change the language mode from "CSS" to "Tailwind CSS"
+
+`JobView.vue`: As a temporary workaround for stylesheet errors I replaced `md:grid-cols-70/30` with `md:grid-cols-[70%_30%]`
+
+I split `main.css` into two stylesheets and imported them both in `@/main.js`:
 
 fonts.css:
 
@@ -109,8 +113,6 @@ main.js:
 import './assets/fonts.css'; // Google Fonts
 import './assets/tailwind.css'; // tailwind + @theme
 ```
-
-I still get an error on `@theme`. The Poppins font seems to work fine.
 
 As of Vue 3 there's no need to import `defineProps` from `vue` anymore so I removed all the import statements.
 
