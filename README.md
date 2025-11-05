@@ -8,7 +8,7 @@ These are the local files I created while following the Traversy Media tutorial 
 
 I didn't clone or fork the project repo because I wanted to create everything from scratch. I enjoyed this tutorial and the job board project. It was a good review of Vue.js and Tailwind CSS while providing an opportunity to work with an API locally.
 
-### Technologies used
+## Technologies used
 
 - Vue 3/Composition API
 - Vite
@@ -23,14 +23,14 @@ I didn't clone or fork the project repo because I wanted to create everything fr
 - Fill All Inputs with Dummy Data (Chrome extension)
 - Netlify
 
-## To install and run from repo
+## Install and run
 
 ```sh
 npm install
 npm run dev
 ```
 
-### Notes about tutorial
+## Notes about tutorial
 
 Create application:
 
