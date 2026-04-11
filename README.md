@@ -23,11 +23,12 @@ I didn't clone or fork the project repo because I wanted to create everything fr
 - Fill All Inputs with Dummy Data (Chrome extension)
 - Netlify
 
-## Install and run
+## Install and run from repo
 
 ```sh
 npm install
-npm run dev
+npm run dev # run Vite frontend on http://localhost:3000
+npm run server # run JSON server on http://localhost:8000
 ```
 
 ## Notes about tutorial
@@ -123,4 +124,4 @@ I encountered the Vue Router warning "[Vue Router warn]: No match found for loca
 
 ## Screenshot
 
-![Screenshot of WDS weather app](./public/screenshot.png "Screenshot of WDS weather app")
+![Screenshot of Vue Jobs app](./public/screenshot.png "Screenshot of Vue Jobs app")
