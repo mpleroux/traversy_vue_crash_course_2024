@@ -36,7 +36,7 @@ npm run server # run JSON server on http://localhost:8000
 Create application:
 
 ```sh
-cd `~/Dev/traversy_vue_crash_course_2024
+cd ~/Dev/traversy_vue_crash_course_2024
 npm create vue@latest
 ```
 
